@@ -50,6 +50,10 @@ return packer.startup(function(use)
   use "lunarvim/darkplus.nvim"
   use "morhetz/gruvbox"
 
+  -- Telescope
+  use "nvim-telescope/telescope.nvim"
+  use 'nvim-telescope/telescope-media-files.nvim'
+
   -- Conquer of Completion
   use {'neoclide/coc.nvim', branch = 'release'}
   -- Automatically set up your configuration after cloning packer.nvim
