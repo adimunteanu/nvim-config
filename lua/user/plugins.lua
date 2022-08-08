@@ -46,6 +46,8 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "windwp/nvim-autopairs" -- Autopairs
   use "numToStr/Comment.nvim" -- Easily comment stuff
+  use "akinsho/bufferline.nvim" -- Adds a tab-like buffer bar at the top
+  use "moll/vim-bbye" -- Helps with closing buffers
 
   -- Git
   use "lewis6991/gitsigns.nvim"
