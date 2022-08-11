@@ -49,10 +49,12 @@ return packer.startup(function(use)
   use "akinsho/bufferline.nvim" -- Adds a tab-like buffer bar at the top
   use "moll/vim-bbye" -- Helps with closing buffers
   use "akinsho/toggleterm.nvim" -- Toggle terminal
+  use "nvim-lualine/lualine.nvim"
 
   -- Git
   use "lewis6991/gitsigns.nvim"
   use "tpope/vim-fugitive"
+
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use "lunarvim/darkplus.nvim"
