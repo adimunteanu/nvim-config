@@ -18,7 +18,13 @@ vim.g.maplocalleader = " "
 --   term_mode = "t",
 --   command_mode = "c",
 
--- Normal --
+-- Remap delete to empty register to avoid cutting
+keymap("n", "d", '"_d', opts)
+keymap("v", "d", '"_d', opts)
+
+-- Show definition on hover
+keymap("n", "<leader>h", ":call CocActionAsync('doHover')<cr>", opts)
+
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
